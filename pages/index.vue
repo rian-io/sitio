@@ -1,28 +1,15 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        sitio
+      <h1>
+        Hi, I am Rian Oliveira<span class="fancy">.</span>
       </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <a
+        href="https://github.com/rian-io"
+        target="_blank"
+        rel="noopener"
+      ><span class="handle">@rian-io</span></a>
+      <h2>A developer studying software architecture.</h2>
     </div>
   </div>
 </template>
@@ -31,43 +18,35 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  padding: 0 1.5rem;
 }
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 500;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.25;
 }
-
-.links {
-  padding-top: 15px;
+.handle {
+  display: inline-block;
+  margin-top: 0.275em;
+  color: #9b9b9b;
+  letter-spacing: 0.05em;
+}
+@media (min-width: 769px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
 }
 </style>
