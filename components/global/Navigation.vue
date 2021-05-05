@@ -1,29 +1,48 @@
 <template>
-  <div class="container">
-    <ul>
-      <li>
-        <nuxt-link to="/">
-          about
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/resume">
-          resume
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/blog">
-          blog
-        </nuxt-link>
-      </li>
-    </ul>
+  <div>
+    <Burger :active="isActive" @toggle="toggle" />
+    <div :class="{'active': isActive}" class="navigation">
+      <ul>
+        <li>
+          <nuxt-link to="/" @click.native="toggle">
+            about
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/resume" @click.native="toggle">
+            resume
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/blog" @click.native="toggle">
+            blog
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggle () {
+      this.isActive = !this.isActive
+    }
+  }
+}
+</script>
+
 <style>
-.container {
+.navigation {
   width: 0;
 }
+
 ul {
   opacity: 0;
   width: 100%;
@@ -39,12 +58,13 @@ ul {
   flex-direction: column;
   justify-content: center;
   z-index: 1;
-  transform: translateY(100%);
-  transition: opacity 200ms;
+  transform: translateX(100%);
+  transition: 400ms;
 }
-.nuxt-link-exact-active ul {
+.active ul {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
+  transition-duration: 200ms;
 }
 li {
   margin-bottom: 1.75rem;
@@ -57,6 +77,7 @@ li:last-child {
 .nuxt-link-exact-active {
   color: #222;
 }
+
 @media (min-width: 769px) {
   .container {
     width: 7rem;

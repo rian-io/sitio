@@ -20,6 +20,7 @@ export default {}
 
 <style scoped>
 .container {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex: 1 1 auto;
@@ -41,7 +42,7 @@ h2 {
   color: #9b9b9b;
   letter-spacing: 0.05em;
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
   h1 {
     font-size: 3rem;
   }
