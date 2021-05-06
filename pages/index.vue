@@ -5,11 +5,12 @@
         Hi, I am Rian Oliveira<span class="fancy">.</span>
       </h1>
       <a
-        href="https://github.com/rian-io"
+        href="https://www.linkedin.com/in/rianoliveira/"
         target="_blank"
         rel="noopener"
       ><span class="handle">@rian-io</span></a>
       <h2>A developer studying software architecture.</h2>
+      <SocialList />
     </div>
   </div>
 </template>
@@ -42,6 +43,7 @@ h2 {
   color: #9b9b9b;
   letter-spacing: 0.05em;
 }
+
 @media (min-width: 960px) {
   h1 {
     font-size: 3rem;
