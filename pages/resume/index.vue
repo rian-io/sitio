@@ -1,15 +1,27 @@
 <template>
-  <div class="container">
-    <div>
-      <h1>
-        Resume<span class="fancy">.</span>
-      </h1>
-    </div>
-  </div>
+  <main class="container">
+    <h1>
+      {{ resume.title }}<span class="fancy">.</span>
+    </h1>
+    <article>
+      <nuxt-content :document="resume" />
+    </article>
+  </main>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData ({ $content, error }) {
+    let resume
+    try {
+      resume = await $content('resume').fetch()
+      resume = resume[0]
+    } catch (e) {
+      error({ message: 'Resume not found' })
+    }
+    return { resume }
+  }
+}
 </script>
 
 <style scoped>
