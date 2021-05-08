@@ -8,7 +8,7 @@
         href="https://www.linkedin.com/in/rianoliveira/"
         target="_blank"
         rel="noopener"
-      ><span class="handle">@rian-io</span></a>
+      ><span class="handle">@rianoliveira</span></a>
       <h2>A developer studying software architecture.</h2>
       <SocialList />
     </div>

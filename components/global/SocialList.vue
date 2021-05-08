@@ -39,7 +39,7 @@ a:not(:last-child) {
   margin-right: 2em;
 }
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 </style>

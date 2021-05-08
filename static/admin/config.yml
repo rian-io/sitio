@@ -1,4 +1,4 @@
-#site_url: https://xenodochial-golick-209493.netlify.app
+site_url: https://rianoliveira.netlify.app
 
 publish_mode: editorial_workflow
 backend:
@@ -72,7 +72,6 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Tags"
         label_singular: "Tag"

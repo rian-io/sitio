@@ -1,12 +1,17 @@
 <template>
-  <main class="container">
+  <div class="container">
     <h1>
-      {{ resume.title }}<span class="fancy">.</span>
+      {{ resume.title }}
     </h1>
     <article>
       <nuxt-content :document="resume" />
     </article>
-  </main>
+    <footer>
+      <div class="social-list">
+        <SocialList />
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -27,11 +32,15 @@ export default {
 <style scoped>
 .container {
   display: block;
-  max-width: 36rem;
+  max-width: 45rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
   box-sizing: border-box;
   z-index: 0;
+}
+.social-list {
+  margin-top: 3rem;
+  text-align: center;
 }
 </style>

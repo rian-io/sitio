@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .burger {
   position: fixed;
   width: 38px;

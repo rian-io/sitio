@@ -1,21 +1,21 @@
 <template>
-  <div class="container">
-    <div>
-      <h1>
-        Posts<span class="fancy">.</span>
-      </h1>
-    </div>
+  <div class="post-index">
+    <PostList :amount="10" />
   </div>
 </template>
 
 <script>
-export default {}
+import PostList from '~/components/posts/PostList.vue'
+
+export default {
+  components: { PostList }
+}
 </script>
 
 <style scoped>
-.container {
+.post-index {
   display: block;
-  max-width: 36rem;
+  max-width: 65rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
