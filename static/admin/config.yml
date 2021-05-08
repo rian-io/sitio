@@ -44,7 +44,7 @@ collections:
     files:
       - name: "tags"
         label: "Tags"
-        file: "meta/tags.yml"
+        folder: "content/tags"
         description: "List of tags"
         fields:
           - name: tags

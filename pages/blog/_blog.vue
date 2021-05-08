@@ -16,8 +16,9 @@
       <nuxt-content :document="post" />
     </article>
     <footer>
-      <div class="social-list">
+      <div class="footer">
         <SocialList />
+        <Copyright />
       </div>
     </footer>
   </div>
@@ -73,7 +74,7 @@ h1 {
   display: inline-block;
   margin-left: 0.5rem;
 }
-.social-list {
+.footer {
   margin-top: 3rem;
   text-align: center;
 }

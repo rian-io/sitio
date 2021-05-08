@@ -4,19 +4,19 @@
     <div :class="{'active': isActive}" class="navigation">
       <ul>
         <li>
-          <nuxt-link to="/" @click.native="toggle">
+          <NuxtLink to="/" @click.native="toggle">
             about
-          </nuxt-link>
+          </NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/resume" @click.native="toggle">
+          <NuxtLink to="/resume" @click.native="toggle">
             resume
-          </nuxt-link>
+          </NuxtLink>
         </li>
         <li>
-          <nuxt-link to="/blog" @click.native="toggle">
+          <NuxtLink to="/blog" @click.native="toggle">
             blog
-          </nuxt-link>
+          </NuxtLink>
         </li>
       </ul>
     </div>

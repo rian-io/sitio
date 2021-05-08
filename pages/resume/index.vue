@@ -7,8 +7,9 @@
       <nuxt-content :document="resume" />
     </article>
     <footer>
-      <div class="social-list">
+      <div class="footer">
         <SocialList />
+        <Copyright />
       </div>
     </footer>
   </div>
@@ -39,7 +40,7 @@ export default {
   box-sizing: border-box;
   z-index: 0;
 }
-.social-list {
+.footer {
   margin-top: 3rem;
   text-align: center;
 }

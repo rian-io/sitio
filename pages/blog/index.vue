@@ -1,6 +1,6 @@
 <template>
   <div class="post-index">
-    <PostList :amount="10" />
+    <PostList :amount="5" />
   </div>
 </template>
 

@@ -10,16 +10,26 @@
         </li>
       </ul>
     </div>
+    <ul className="categories">
+      <li
+        v-for="(tag, index) in tags"
+        :key="index"
+      >
+        <TagLink :tag="tag" />
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 import PostItem from '~/components/posts/PostItem'
+import TagLink from '~/components/tags/TagLink'
 
 export default {
   name: 'PostList',
   components: {
-    PostItem
+    PostItem,
+    TagLink
   },
   props: {
     amount: { // ? https://content.nuxtjs.org/fetching#limitn
@@ -30,11 +40,13 @@ export default {
   },
   data () {
     return {
-      posts: []
+      posts: [],
+      tags: []
     }
   },
   async mounted () {
     this.posts = await this.fetchPosts()
+    this.tags = await this.fetchTags()
   },
   methods: {
     async fetchPosts () {
@@ -47,6 +59,15 @@ export default {
         this.error({ message: 'Blog posts not found' })
       }
       return posts
+    },
+    async fetchTags () {
+      let tags
+      try {
+        tags = await this.$content('tags').fetch()
+      } catch (e) {
+        this.error({ message: 'Tags not found' })
+      }
+      return tags
     }
   }
 }
