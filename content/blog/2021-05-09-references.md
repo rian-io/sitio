@@ -12,4 +12,6 @@ Made with [Nuxt.js](https://nuxtjs.org) as static site and [this article](https:
 
 <https://github.com/Knogobert/ntn-boilerplate> as implementation reference of Nuxt.js with Netlify CMS.
 
-<https://github.com/rian-io/nextjs-netlify-blog-template> as reference of layout.
+Layout by <https://github.com/wutali/nextjs-netlify-blog-template>.
+
+Icons by [iconsout](https://iconscout.com) through [vue-unicons](https://github.com/Iconscout/vue-unicons).
