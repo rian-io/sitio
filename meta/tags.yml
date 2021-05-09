@@ -3,3 +3,5 @@ tags:
     name: License
   - slug: documentation
     name: Documentation
+  - slug: reference
+    name: Reference
