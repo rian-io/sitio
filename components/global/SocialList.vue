@@ -6,7 +6,7 @@
       target="_blank"
       rel="noopener"
     >
-      <Behance class="icon" />
+      <UilBehanceAlt class="icon" />
     </a>
     <a
       title="GitHub"
@@ -14,19 +14,18 @@
       target="_blank"
       rel="noopener"
     >
-      <GitHub class="icon" />
+      <UilGithubAlt class="icon" />
     </a>
   </div>
 </template>
 
 <script>
-import GitHub from '~/assets/icons/github.svg?inline'
-import Behance from '~/assets/icons/behance.svg?inline'
+import { UilBehanceAlt, UilGithubAlt } from '@iconscout/vue-unicons'
 
 export default {
   components: {
-    GitHub,
-    Behance
+    UilBehanceAlt,
+    UilGithubAlt
   }
 }
 </script>
@@ -39,6 +38,7 @@ a:not(:last-child) {
   margin-right: 2em;
 }
 .icon {
+  color: black;
   width: 24px;
   height: 24px;
 }

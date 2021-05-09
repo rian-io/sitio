@@ -36,24 +36,30 @@ collections:
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
-  - name: "tags"
-    label: "Tags"
-    folder: "content/tags"
-    description: "List of tags"
-    fields:
-      - name: tags
-        label: Tags
-        label_singular: "Tag"
-        widget: list
+  - name: "meta"
+    label: "Meta"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "tags"
+        label: "Tags"
+        file: "meta/tags.yml"
+        description: "List of tags"
         fields:
-          - label: "Slug"
-            name: "slug"
-            widget: "string"
-            hint: "The part of a URL identifies the tag"
-          - label: "Display Name"
-            name: "name"
-            widget: "string"
-            hint: "Tag name for displaying on the site"
+          - name: tags
+            label: Tags
+            label_singular: "Tag"
+            widget: list
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                hint: "The part of a URL identifies the tag"
+              - label: "Display Name"
+                name: "name"
+                widget: "string"
+                hint: "Tag name for displaying on the site"
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
