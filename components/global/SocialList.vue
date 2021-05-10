@@ -8,7 +8,8 @@
     >
       <UilGithubAlt class="icon" />
     </a>
-    <a v-if="$nuxt.$route.name !== 'index'"
+    <a
+      v-if="$nuxt.$route.name !== 'index'"
       title="LinkedIn"
       href="https://www.linkedin.com/in/rianoliveira/"
       target="_blank"
