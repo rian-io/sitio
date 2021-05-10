@@ -12,6 +12,8 @@ Made with [Nuxt.js](https://nuxtjs.org) as static site and [this article](https:
 
 <https://github.com/Knogobert/ntn-boilerplate> as implementation reference of Nuxt.js with Netlify CMS.
 
-Layout by <https://github.com/wutali/nextjs-netlify-blog-template>.
+Layout first seen at <https://github.com/wutali/nextjs-netlify-blog-template>.
+
+Font [Ubuntu Font](https://design.ubuntu.com/font/) under license [Ubuntu Font License](https://ubuntu.com/legal/font-licence).
 
 Icons by [iconsout](https://iconscout.com) through [vue-unicons](https://github.com/Iconscout/vue-unicons).

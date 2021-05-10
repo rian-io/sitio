@@ -1,14 +1,6 @@
 <template>
   <div>
     <a
-      title="Behance"
-      href="https://www.behance.net/r_io"
-      target="_blank"
-      rel="noopener"
-    >
-      <UilBehanceAlt class="icon" />
-    </a>
-    <a
       title="GitHub"
       href="https://github.com/rian-io"
       target="_blank"
@@ -16,16 +8,33 @@
     >
       <UilGithubAlt class="icon" />
     </a>
+    <a v-if="$nuxt.$route.name !== 'index'"
+      title="LinkedIn"
+      href="https://www.linkedin.com/in/rianoliveira/"
+      target="_blank"
+      rel="noopener"
+    >
+      <UilLinkedinAlt class="icon" />
+    </a>
+    <a
+      title="Behance"
+      href="https://www.behance.net/r_io"
+      target="_blank"
+      rel="noopener"
+    >
+      <UilBehanceAlt class="icon" />
+    </a>
   </div>
 </template>
 
 <script>
-import { UilBehanceAlt, UilGithubAlt } from '@iconscout/vue-unicons'
+import { UilBehanceAlt, UilGithubAlt, UilLinkedinAlt } from '@iconscout/vue-unicons'
 
 export default {
   components: {
     UilBehanceAlt,
-    UilGithubAlt
+    UilGithubAlt,
+    UilLinkedinAlt
   }
 }
 </script>
