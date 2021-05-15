@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="post.path">
-    <PostDate :date="$dateFns.parseISO (post.createdAt)" />
+    <PostDate :date="$dateFns.parseISO (post.date)" />
     <h2>{{ post.title }}</h2>
   </nuxt-link>
 </template>

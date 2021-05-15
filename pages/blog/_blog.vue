@@ -9,7 +9,7 @@
         <h1>{{ post.title }}</h1>
         <div class="metadata">
           <div>
-            <PostDate :date="$dateFns.parseISO (post.createdAt)" />
+            <PostDate :date="$dateFns.parseISO (post.date)" />
           </div>
         </div>
       </header>
