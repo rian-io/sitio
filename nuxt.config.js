@@ -41,6 +41,11 @@ export default {
     '@/assets/css/content.module.css'
   ],
 
+  loading: {
+    color: 'DimGrey',
+    height: '5px'
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -67,5 +72,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend (config, ctx) {
+      config.module.rules.push({
+        test: /\.ya?ml$/,
+        use: 'js-yaml-loader'
+      })
+    }
   }
 }
