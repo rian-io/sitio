@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="`/blog/tag/${tag.slug}`">
-    #{{ tag.name }}
+    # {{ tag.name }}
   </NuxtLink>
 </template>
 

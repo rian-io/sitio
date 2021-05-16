@@ -77,6 +77,13 @@ export default {
         test: /\.ya?ml$/,
         use: 'js-yaml-loader'
       })
+      if (ctx.isDev && ctx.isClient) {
+        const options = {
+          exclude: ['node_modules']
+        }
+        const EslintPlugin = require('eslint-webpack-plugin')
+        config.plugins.push(new EslintPlugin(options))
+      }
     }
   }
 }

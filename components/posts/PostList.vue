@@ -24,6 +24,7 @@
 <script>
 import PostItem from '~/components/posts/PostItem'
 import TagLink from '~/components/tags/TagLink'
+import tags from '~/meta/tags.yml'
 
 export default {
   name: 'PostList',
@@ -60,14 +61,12 @@ export default {
       }
       return posts
     },
-    async fetchTags () {
-      let tags
-      try {
-        tags = await this.$content('tags').fetch()
-      } catch (e) {
-        this.error({ message: 'Tags not found' })
+    fetchTags () {
+      const result = []
+      for (const tag of tags.tags) {
+        result.push(tag)
       }
-      return tags
+      return result
     }
   }
 }
