@@ -32,9 +32,9 @@ export default {
     TagLink
   },
   props: {
-    amount: { // ? https://content.nuxtjs.org/fetching#limitn
+    amount: {
       type: Number,
-      default: 10,
+      default: 5,
       validator: val => val >= 0 && val < 100
     }
   },
@@ -53,7 +53,7 @@ export default {
       let posts
       try {
         posts = await this.$content('blog')
-          .sortBy('createdAt', 'desc')
+          .sortBy('date', 'desc')
           .limit(this.amount).fetch()
       } catch (e) {
         this.error({ message: 'Blog posts not found' })
