@@ -14,6 +14,14 @@
         </div>
       </header>
       <nuxt-content :document="post" />
+      <ul class="tag-list">
+        <li
+          v-for="(tag, index) in tags"
+          :key="index"
+        >
+          <TagButton :tag="tag" />
+        </li>
+      </ul>
     </article>
     <footer>
       <div class="footer">
@@ -26,19 +34,31 @@
 
 <script>
 import PostDate from '~/components/posts/PostDate'
+import TagButton from '~/components/tags/TagButton'
+import ymlTags from '~/meta/tags.yml'
 
 export default {
   components: {
-    PostDate
+    PostDate,
+    TagButton
   },
   async asyncData ({ $content, params, error }) {
     let post
+    let tags = []
+
     try {
       post = await $content('blog', params.blog).fetch()
     } catch (e) {
       error({ message: 'Blog post not found' })
     }
-    return { post }
+
+    tags = ymlTags.tags.filter(element => post.tags.includes(element.slug))
+    return { post, tags }
+  },
+  data () {
+    return {
+      tags: []
+    }
   }
 }
 </script>
