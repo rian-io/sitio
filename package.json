@@ -14,8 +14,6 @@
     "@iconscout/vue-unicons": "^0.0.3",
     "@nuxt/content": "^1.14.0",
     "core-js": "^3.12.1",
-    "eslint-webpack-plugin": "^2.5.4",
-    "js-yaml-loader": "^1.2.2",
     "nuxt": "^2.15.6"
   },
   "devDependencies": {
@@ -26,6 +24,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.26.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.7.0"
+    "eslint-plugin-vue": "^7.7.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "js-yaml-loader": "^1.2.2"
   }
 }
