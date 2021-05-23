@@ -7,14 +7,14 @@
 
 <script>
 import TagPostList from '~/components/tags/TagPostList'
-import tags from '~/meta/tags.yml'
+import { getTag } from '~/utils/tag'
 
 export default {
   components: {
     TagPostList
   },
   async asyncData ({ $content, params }) {
-    const tag = tags.tags.find(element => element.slug === params.tag)
+    const tag = getTag(params.tag)
 
     const posts = await $content('blog', params.slug)
       .where({ tags: { $contains: tag.slug } })

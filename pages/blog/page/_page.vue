@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import getContent from '@/utils/getContent'
-import PostList from '@/components/posts/PostList'
+import PostList from '~/components/posts/PostList'
+import getContent from '~/utils/getContent'
 
 export default {
   components: {

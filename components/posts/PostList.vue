@@ -25,7 +25,7 @@
 <script>
 import PostItem from '~/components/posts/PostItem'
 import TagLink from '~/components/tags/TagLink'
-import tags from '~/meta/tags.yml'
+import { getTags } from '~/utils/tag'
 
 export default {
   name: 'PostList',
@@ -45,19 +45,7 @@ export default {
   },
   data () {
     return {
-      tags: []
-    }
-  },
-  async mounted () {
-    this.tags = await this.fetchTags()
-  },
-  methods: {
-    fetchTags () {
-      const result = []
-      for (const tag of tags.tags) {
-        result.push(tag)
-      }
-      return result
+      tags: getTags()
     }
   }
 }
