@@ -9,6 +9,7 @@
           <PostItem :post="post" />
         </li>
       </ul>
+      <Pagination :last-page="lastPage" />
     </div>
     <ul className="categories">
       <li
@@ -33,34 +34,24 @@ export default {
     TagLink
   },
   props: {
-    amount: {
+    posts: {
+      type: Array,
+      default: Array
+    },
+    lastPage: {
       type: Number,
-      default: 5,
-      validator: val => val >= 0 && val < 100
+      default: 1
     }
   },
   data () {
     return {
-      posts: [],
       tags: []
     }
   },
   async mounted () {
-    this.posts = await this.fetchPosts()
     this.tags = await this.fetchTags()
   },
   methods: {
-    async fetchPosts () {
-      let posts
-      try {
-        posts = await this.$content('blog')
-          .sortBy('date', 'desc')
-          .limit(this.amount).fetch()
-      } catch (e) {
-        this.error({ message: 'Blog posts not found' })
-      }
-      return posts
-    },
     fetchTags () {
       const result = []
       for (const tag of tags.tags) {
@@ -78,6 +69,8 @@ export default {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  max-height: 100%;
+  height: 100%;
   padding: 0 1.5rem;
 }
 ul {
