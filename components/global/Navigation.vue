@@ -14,7 +14,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog" @click.native="toggle">
+          <NuxtLink :class="{'nuxt-link-exact-active':isExact}" to="/blog" @click.native="toggle">
             blog
           </NuxtLink>
         </li>
@@ -28,6 +28,11 @@ export default {
   data () {
     return {
       isActive: false
+    }
+  },
+  computed: {
+    isExact () {
+      return this.$nuxt.$route.path.includes('blog')
     }
   },
   methods: {
