@@ -20,15 +20,30 @@ Software Developer with +5 years experience building scalable `Java` aplications
 
 ## Education
 
+### Graduate Solutions Architect
+
+**Pontifícia Universidade Católica de Minas Gerais** from 03/2021 to 10/22</br>
+Belo Horizonte - MG
+
 ### Bachelor of Computer Science
 
-  **Universidade Estácio de Sá | UniSEB** from 01/2012 to 12/2015</br>
-  Ribeirão Preto - SP
+**Universidade Estácio de Sá | UniSEB** from 01/2012 to 12/2015</br>
+Ribeirão Preto - SP
 
 ## Skills
 
 - Java
-- SQL (Oracle, SQL Server)
+  - JSF
+  - Strut
+  - Spring Boot
+- SQL
+  - Oracle
+  - SQL Server
+- Javascript
+- HTML
+- CSS
+- VueJS
+  - Nuxtjs
 - Git
 - Jira
 
