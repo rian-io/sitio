@@ -1,8 +1,5 @@
 <template>
   <div class="container">
-    <h1>
-      {{ resume.title }}
-    </h1>
     <article>
       <nuxt-content :document="resume" />
     </article>
@@ -33,7 +30,7 @@ export default {
 <style scoped>
 .container {
   display: block;
-  max-width: 45rem;
+  max-width: 40rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;

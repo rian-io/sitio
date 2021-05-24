@@ -1,18 +1,38 @@
 ---
-title: Getting started
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+title: Resume
 ---
 
-Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
+Software Developer with +5 years experience building scalable `Java` aplications for different types of industries. Experienced in distincts frameworks for Java web development, like `GWT`, `VRaptor`, `Struts`, `JSF` and `Spring`. Focused in quality of code and high performing development process.
 
-## Writing content
+## Experience
 
-Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
+### Monitora Soluções Tecnológicas
 
-## Fetching content
+**Sofware Developer** since 12/2020
 
-Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.
+### Techo Software
 
-## Displaying content
+**Sofware Analyst** from 10/2019 to 11/2020
 
-Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying
+### Compliance Soluções em Software e Serviços
+
+**Java Developer** from 01/2016 to 09/2019
+
+## Education
+
+### Bachelor of Computer Science
+
+  **Universidade Estácio de Sá | UniSEB** from 01/2012 to 12/2015</br>
+  Ribeirão Preto - SP
+
+## Skills
+
+- Java
+- SQL (Oracle, SQL Server)
+- Git
+- Jira
+
+## Languages
+
+- Portuguese
+- English
