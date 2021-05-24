@@ -2,7 +2,7 @@
 title: Resume
 ---
 
-Software Developer with +5 years experience building scalable `Java` aplications for different types of industries. Experienced in distincts frameworks for Java web development, like `GWT`, `VRaptor`, `Struts`, `JSF` and `Spring`. Focused in quality of code and high performing development process.
+Software Developer with +5 years experience building scalable `Java` aplications for different types of industries. Experienced in distinct frameworks for Java web development, like `GWT`, `VRaptor`, `Struts`, `JSF` and `Spring`. Focused in quality of code and high performing development process.
 
 ## Experience
 
