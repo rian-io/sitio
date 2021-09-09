@@ -1,12 +1,11 @@
 <template>
   <div class="container">
     <article>
-      <nuxt-content :document="resume" />
+      <nuxt-content :document="about" />
     </article>
     <footer>
       <div class="footer">
         <SocialList />
-        <Copyright />
       </div>
     </footer>
   </div>
@@ -15,14 +14,14 @@
 <script>
 export default {
   async asyncData ({ $content, error }) {
-    let resume
+    let about
     try {
-      resume = await $content('resume').fetch()
-      resume = resume[0]
+      about = await $content('about').fetch()
+      about = about[0]
     } catch (e) {
-      error({ message: 'Resume not found' })
+      error({ message: 'about not found' })
     }
-    return { resume }
+    return { about }
   }
 }
 </script>

@@ -5,17 +5,17 @@
       <ul>
         <li>
           <NuxtLink to="/" @click.native="toggle">
-            about
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/resume" @click.native="toggle">
-            resume
+            home
           </NuxtLink>
         </li>
         <li>
           <NuxtLink :class="{'nuxt-link-exact-active':isExact}" to="/blog" @click.native="toggle">
             blog
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/about" @click.native="toggle">
+            about
           </NuxtLink>
         </li>
       </ul>

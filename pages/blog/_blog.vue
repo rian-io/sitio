@@ -23,11 +23,9 @@
         </li>
       </ul>
     </article>
-    <footer>
-      <div class="footer">
-        <SocialList />
-        <Copyright />
-      </div>
+    <footer class="footer">
+      <SocialList />
+      <Copyright />
     </footer>
   </div>
 </template>
@@ -66,7 +64,7 @@ export default {
 <style scoped>
 .container {
   display: block;
-  max-width: 36rem;
+  max-width: 40rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;

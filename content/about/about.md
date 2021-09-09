@@ -1,10 +1,23 @@
 ---
-layout: blog
-title: License
-date: 2021-05-08T01:29:13.843Z
-tags:
-  - license
+title: About
 ---
+
+## References
+
+Made with [Nuxt.js](https://nuxtjs.org) as static site and [Create a Blog with Nuxt Content](https://nuxtjs.org/blog/creating-blog-with-nuxt-content) as main reference to blog.
+
+[Netlify CMS](https://www.netlifycms.org/docs/intro/) and [nuxtjs/content](https://content.nuxtjs.org) to manager content.
+
+<https://github.com/Knogobert/ntn-boilerplate> as implementation reference of Nuxt.js with Netlify CMS.
+
+Layout first seen at <https://github.com/wutali/nextjs-netlify-blog-template>.
+
+Font [Ubuntu Font](https://design.ubuntu.com/font/) under license [Ubuntu Font License](https://ubuntu.com/legal/font-licence).
+
+Icons by [iconsout](https://iconscout.com) through [vue-unicons](https://github.com/Iconscout/vue-unicons).
+
+## License
+
 Copyright 2021 Rian Oliveira
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
