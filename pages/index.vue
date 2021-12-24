@@ -9,7 +9,7 @@
         target="_blank"
         rel="noopener"
       ><span class="handle">@rianoliveira</span></a>
-      <h2>A cyber security student.</h2>
+      <h2>A AI student.</h2>
       <SocialList />
     </div>
   </div>
