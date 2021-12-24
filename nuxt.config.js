@@ -88,6 +88,7 @@ export default {
         const options = {
           exclude: ['node_modules']
         }
+
         const EslintPlugin = require('eslint-webpack-plugin')
         config.plugins.push(new EslintPlugin(options))
       }
