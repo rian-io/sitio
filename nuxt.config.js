@@ -1,5 +1,8 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
+  bridge: false,
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -95,4 +98,4 @@ export default {
       }
     }
   }
-}
+})
