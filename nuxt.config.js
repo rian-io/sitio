@@ -61,6 +61,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/date-fns',
+    '@nuxt/postcss8',
     '@nuxtjs/svg'
   ],
 
