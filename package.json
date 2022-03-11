@@ -30,6 +30,9 @@
     "eslint-webpack-plugin": "^3.1.1",
     "js-yaml-loader": "^1.2.2"
   },
+  "peerDependencies": {
+    "postcss": "^8.4.8"
+  },
   "babel": {},
   "resolutions": {
     "ansi-html": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz"
