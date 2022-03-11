@@ -64,8 +64,7 @@ export default defineNuxtConfig({
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/date-fns',
-    '@nuxt/postcss8',
-    '@nuxtjs/svg'
+    '@nuxt/postcss8'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
