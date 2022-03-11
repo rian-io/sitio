@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'Rian Oliveira',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt-BR'
     },
     meta: [
       { charset: 'utf-8' },
