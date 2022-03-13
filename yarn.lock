@@ -1411,7 +1411,7 @@
     node-html-parser "^5.1.0"
     ufo "^0.7.9"
 
-"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27450445.3e68433":
+"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27450445.3e68433", "@nuxt/kit@npm:@nuxt/kit-edge@latest":
   version "3.0.0-27450445.3e68433"
   resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27450445.3e68433.tgz#b6b1750c6e1caa82c0f172707506b85ff10bcc01"
   integrity sha512-wSz/eAwsEwuLy7DN2l/9qRadPKY4SbNWoG2MuFXm9bVKhzkn4KnaXnntXlIhRD2j4g18+TNhwIXN4/hNIWVmGQ==
@@ -1728,6 +1728,16 @@
     webpack-hot-middleware "^2.25.1"
     webpack-node-externals "^3.0.0"
     webpackbar "^5.0.2"
+
+"@nuxtjs/color-mode@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-3.0.2.tgz#17110d78864ad00ce524f7fc2d379d8c28ff765a"
+  integrity sha512-JgppnxOsVe2T/UGj0xjok/8TKDI27bRuhNh+Qrvr0FsS90Mty2acZLLN0lkrOTV0WLrpnTgN7mZCrgCWmhvziA==
+  dependencies:
+    "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
+    defu "^5.0.0"
+    lodash.template "^4.5.0"
+    pathe "^0.2.0"
 
 "@nuxtjs/date-fns@^1.5.0":
   version "1.5.0"

@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
-  bridge: false,
+  bridge: false, // Temporarily disable bridge integration
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -70,7 +70,10 @@ export default defineNuxtConfig({
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    // https://color-mode.nuxtjs.org
+    // used on version 3
+    // '@nuxtjs/color-mode'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
