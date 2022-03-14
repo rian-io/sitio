@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'active': active}" class="burger" @click="toggleActive">
+  <div :class="{'active': active}" class="burger glass" @click="toggleActive">
     <div class="meat meat-1" />
     <div class="meat meat-2" />
     <div class="meat meat-3" />

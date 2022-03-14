@@ -1,5 +1,5 @@
 <template>
-  <div class="picker">
+  <div class="picker glass">
    <ul>
       <li
         v-for="mode in Object.keys(modes)"
@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .picker {
   position: fixed;
   top: 1rem;
