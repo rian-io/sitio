@@ -6,6 +6,7 @@
     <footer>
       <div class="footer">
         <SocialList />
+        <Copyright />
       </div>
     </footer>
   </div>

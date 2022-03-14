@@ -4,8 +4,20 @@
   font-weight: 200;
 }
 
+.sepia-mode .nuxt-content {
+  color: #433422;
+}
+
+.dark-mode .nuxt-content {
+  color: #ebf4f1;
+}
+
 .nuxt-content time {
   color: #9b9b9b;
+}
+
+.sepia-mode .nuxt-content time {
+  color: #7B7064;
 }
 
 .nuxt-content p {
@@ -16,6 +28,14 @@
 .nuxt-content a {
   color: blue;
   text-decoration: underline;
+}
+
+.dark-mode .nuxt-content a {
+  color: lightgray;
+}
+
+.sepia-mode .nuxt-content a {
+  color: #433422;
 }
 
 .nuxt-content h1 {
@@ -38,6 +58,10 @@
   color: #9b9b9b;
   display: none;
   content: "#";
+}
+
+.sepia-mode .nuxt-content h2::before {
+  color: #7B7064;
 }
 
 .nuxt-content pre {

@@ -22,6 +22,7 @@ export default {}
 <style scoped>
 .container {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex: 1 1 auto;
@@ -42,6 +43,9 @@ h2 {
   margin-top: 0.275em;
   color: #9b9b9b;
   letter-spacing: 0.05em;
+}
+.sepia-mode .handle {
+  color: #7B7064;
 }
 
 @media (min-width: 960px) {

@@ -4,6 +4,7 @@
       <Navigation />
     </nav>
     <main>
+      <ColorMode />
       <Nuxt />
     </main>
   </div>

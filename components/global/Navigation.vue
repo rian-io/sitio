@@ -66,6 +66,12 @@ ul {
   transform: translateX(100%);
   transition: 400ms;
 }
+.dark-mode ul {
+  background-color: #091a28;
+}
+.sepia-mode ul {
+  background-color: #f1e7d0;
+}
 .active ul {
   opacity: 1;
   transform: translateX(0);
@@ -81,6 +87,12 @@ li:last-child {
 }
 .nuxt-link-exact-active {
   color: #222;
+}
+.dark-mode .nuxt-link-exact-active {
+  color: #fff;
+}
+.sepia-mode .nuxt-link-exact-active {
+  color: #2E2417
 }
 
 @media (min-width: 769px) {

@@ -1,5 +1,4 @@
 export default {
-  bridge: false, // Temporarily disable bridge integration
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -71,11 +70,22 @@ export default {
     '@nuxt/content',
     // https://color-mode.nuxtjs.org
     // used on version 3
-    // '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  colorMode: {
+    preference: 'sepia', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storageKey: 'nuxt-color-mode'
+  },
 
   generate: {
     fallback: true

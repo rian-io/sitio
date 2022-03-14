@@ -1,5 +1,5 @@
 <template>
-  <p>&copy; 2021</p>
+  <p>&copy; 2021-2022</p>
 </template>
 
 <script>
