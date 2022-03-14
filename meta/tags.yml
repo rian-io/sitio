@@ -1,3 +1,7 @@
 tags:
   - slug: about
     name: About
+  - slug: markdown
+    name: Markdown
+  - slug: style
+    name: Style
