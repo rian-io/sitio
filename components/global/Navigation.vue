@@ -109,7 +109,6 @@ li:last-child {
   }
   li {
     font-size: 1rem;
-    padding: 0;
   }
 }
 </style>

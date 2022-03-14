@@ -36,7 +36,7 @@ export default {
   right: 1.25rem;
   z-index: 1;
   margin-bottom: 1rem;
-background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .dark-mode .picker {
   background-color: rgba(9, 26, 40, 0.7);
