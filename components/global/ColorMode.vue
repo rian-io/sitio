@@ -4,6 +4,10 @@
       <li
         v-for="mode in Object.keys(modes)"
         :key="mode"
+        :class="{
+          preferred: !$colorMode.unknown && mode === $colorMode.preference,
+          selected: !$colorMode.unknown && mode === $colorMode.value
+        }"
       >
         <component :is="modes[mode]" @click.native="$colorMode.preference = mode" />  
       </li>
@@ -53,5 +57,30 @@ ul li {
   display: inline-block;
   padding: 5px;
   cursor: pointer;
+  color: #9b9b9b;
+}
+li:hover {
+  color: #222;
+}
+.preferred {
+  color: #222;
+}
+.dark-mode li {
+  color: #9b9b9b;
+}
+.dark-mode li:hover {
+  color: #ebf4f1;
+}
+.dark-mode .preferred {
+  color: #ebf4f1;
+}
+.sepia-mode li {
+  color: #7B7064;
+}
+.sepia-mode li:hover {
+  color: #433422;
+}
+.sepia-mode .preferred {
+  color: #433422;
 }
 </style>
