@@ -15,6 +15,6 @@ export default {
 
 <style scoped>
 span {
-  color: #9b9b9b;
+  color: var(--color-secondary)
 }
 </style>

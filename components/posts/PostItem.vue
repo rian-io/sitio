@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 a {
-  color: #222;
+  color: var(--color);
   display: inline-block;
 }
 h2 {

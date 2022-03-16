@@ -40,13 +40,6 @@ export default {
   right: 1.25rem;
   z-index: 1;
   margin-bottom: 1rem;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.dark-mode .picker {
-  background-color: rgba(9, 26, 40, 0.7);
-}
-.sepia-mode .picker {
-  background-color: rgba(241, 231, 208, 0.7);
 }
 ul {
   list-style: none;
@@ -57,30 +50,12 @@ ul li {
   display: inline-block;
   padding: 5px;
   cursor: pointer;
-  color: #9b9b9b;
+  color: var(--color-secondary);
 }
 li:hover {
-  color: #222;
+  color: var(--color);
 }
 .preferred {
-  color: #222;
-}
-.dark-mode li {
-  color: #9b9b9b;
-}
-.dark-mode li:hover {
-  color: #ebf4f1;
-}
-.dark-mode .preferred {
-  color: #ebf4f1;
-}
-.sepia-mode li {
-  color: #7B7064;
-}
-.sepia-mode li:hover {
-  color: #433422;
-}
-.sepia-mode .preferred {
-  color: #433422;
+  color: var(--color);
 }
 </style>

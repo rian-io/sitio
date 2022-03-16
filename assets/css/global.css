@@ -1,23 +1,15 @@
+@import "./colors.css";
+@import "./details.css";
+
 html,
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   height: 100%;
-}
 
-.light-mode body {
-  background-color: #fff;
-  color: #222;
-}
-
-.dark-mode body {
-  background-color: #091a28;
-  color: #ebf4f1;
-}
-
-.sepia-mode body {
-  background-color: #f1e7d0;
-  color: #433422;
+  background-color: var(--bg);
+  color: var(--color);
+  transition: background-color .5s;
 }
 
 #__nuxt,
@@ -26,54 +18,12 @@ body {
 }
 
 a {
-  color: #9b9b9b;
+  color: var(--color-secondary);
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.sepia-mode a {
-  color: #7B7064;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 
 a:active,
 a:hover {
-  color: #000;
-}
-
-.dark-mode a:active,
-.dark-mode a:hover {
-  color: #fff;
-}
-
-.sepia-mode a:active,
-.sepia-mode a:hover {
-  color: #433422;
-}
-
-.youtube-container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  margin-bottom: 50px;
-}
-
-.youtube-container iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.fancy {
-  color: #1861cf;
-}
-
-.glass {
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  color: var(--color);
 }

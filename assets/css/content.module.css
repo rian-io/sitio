@@ -1,23 +1,11 @@
 .nuxt-content {
   font-family: "Ubuntu", sans-serif;
-  color: #222;
+  color: var(--color);
   font-weight: 200;
 }
 
-.sepia-mode .nuxt-content {
-  color: #433422;
-}
-
-.dark-mode .nuxt-content {
-  color: #ebf4f1;
-}
-
 .nuxt-content time {
-  color: #9b9b9b;
-}
-
-.sepia-mode .nuxt-content time {
-  color: #7B7064;
+  color: var(--color-secondary);
 }
 
 .nuxt-content p {
@@ -26,16 +14,8 @@
 }
 
 .nuxt-content a {
-  color: blue;
+  color: var(--link);
   text-decoration: underline;
-}
-
-.dark-mode .nuxt-content a {
-  color: lightgray;
-}
-
-.sepia-mode .nuxt-content a {
-  color: #433422;
 }
 
 .nuxt-content h1 {
@@ -55,13 +35,9 @@
   margin-left: -1em;
   font-weight: 300;
   font-size: 1.5rem;
-  color: #9b9b9b;
+  color: var(--color-secondary);
   display: none;
   content: "#";
-}
-
-.sepia-mode .nuxt-content h2::before {
-  color: #7B7064;
 }
 
 .nuxt-content pre {
@@ -101,7 +77,8 @@
   margin-top: 0.1em;
   margin-left: -0.2em;
   z-index: -1;
-  color: #ededed;
+  --color: #ededed;
+  color: var(--color-secondary);
 }
 
 .nuxt-content table {
@@ -111,7 +88,7 @@
 }
 
 .nuxt-content table thead {
-  background: #f7f7f7;
+  background: var(--color-table-header);
 }
 
 .nuxt-content table th {
@@ -121,7 +98,7 @@
 .nuxt-content table th,
 .nuxt-content table td {
   padding: 0.5em 1em;
-  border: 1px double #eee;
+  border: 1px double var(--color-table-outline);
 }
 
 .nuxt-content ol,

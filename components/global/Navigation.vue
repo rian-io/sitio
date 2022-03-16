@@ -58,19 +58,13 @@ ul {
   padding: 0;
   position: fixed;
   top: 0;
-  background-color: #fff;
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 1;
   transform: translateX(100%);
   transition: 400ms;
-}
-.dark-mode ul {
-  background-color: #091a28;
-}
-.sepia-mode ul {
-  background-color: #f1e7d0;
 }
 .active ul {
   opacity: 1;
@@ -86,13 +80,7 @@ li:last-child {
   margin-bottom: 0;
 }
 .nuxt-link-exact-active {
-  color: #222;
-}
-.dark-mode .nuxt-link-exact-active {
-  color: #fff;
-}
-.sepia-mode .nuxt-link-exact-active {
-  color: #2E2417
+  color: var(--color);
 }
 
 @media (min-width: 769px) {

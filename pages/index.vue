@@ -40,11 +40,8 @@ h2 {
 .handle {
   display: inline-block;
   margin-top: 0.275em;
-  color: #9b9b9b;
+  color: var(--color-secondary);
   letter-spacing: 0.05em;
-}
-.sepia-mode .handle {
-  color: #7B7064;
 }
 
 @media (min-width: 960px) {

@@ -36,11 +36,11 @@ ul {
 li {
   display: inline-block;
   margin-right: 1em;
-  color: #9b9b9b;
+  color: var(--color-secondary);
   font-size: 1.25rem;
 }
 .nuxt-link-exact-active {
-  color: #222;
+  color: var(--color);
   font-weight: bold;
 }
 </style>

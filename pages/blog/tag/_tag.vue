@@ -43,11 +43,11 @@ h1 {
   padding: 0;
   font-weight: 100;
   font-size: 1.75rem;
-  color: #9b9b9b;
+  color: var(--color-secondary);
 }
 h1 span {
   font-weight: bold;
-  color: #222;
+  color: var(--color);
 }
 @media (min-width: 769px) {
   h1 {
