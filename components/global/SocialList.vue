@@ -48,16 +48,8 @@ a:not(:last-child) {
   margin-right: 2em;
 }
 .icon {
-  color: black;
+  color: var(--color);
   width: 24px;
   height: 24px;
-}
-
-.dark-mode .icon {
-  color: #fff;
-}
-
-.sepia-mode .icon {
-  color: #433422;
 }
 </style>
