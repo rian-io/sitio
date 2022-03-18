@@ -8,7 +8,10 @@
 export default {
   name: 'PostDate',
   props: {
-    date: { type: Date, default: new Date() }
+    date: {
+      type: Date,
+      default: () => new Date()
+    }
   }
 }
 </script>

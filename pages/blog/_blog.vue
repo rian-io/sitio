@@ -9,7 +9,7 @@
         <h1>{{ post.title }}</h1>
         <div class="metadata">
           <div>
-            <PostDate :date="$dateFns.parseISO (post.date)" />
+            <PostDate :date="$dateFns.parseISO(post.date)" />
           </div>
         </div>
       </header>
@@ -52,11 +52,6 @@ export default {
 
     tags = ymlTags.tags.filter(element => post.tags.includes(element.slug))
     return { post, tags }
-  },
-  data () {
-    return {
-      tags: []
-    }
   }
 }
 </script>

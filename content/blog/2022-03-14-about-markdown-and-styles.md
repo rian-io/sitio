@@ -61,13 +61,9 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 
 #### Inline Markdown within tables
 
-<div style={{"overflowX": "auto"}}>
-
 | Inline&nbsp;&nbsp;&nbsp; | Markdown&nbsp;&nbsp;&nbsp; | In&nbsp;&nbsp;&nbsp;                | Table  |
 | ------------------------ | -------------------------- | ----------------------------------- | ------ |
 | _italics_                | **bold**                   | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code` |
-
-</div>
 
 ## Code Blocks
 
