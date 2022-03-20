@@ -23,16 +23,10 @@
 </template>
 
 <script>
-import PostItem from '~/components/posts/PostItem'
-import TagLink from '~/components/tags/TagLink'
 import { getTags } from '~/utils/tag'
 
 export default {
   name: 'PostList',
-  components: {
-    PostItem,
-    TagLink
-  },
   props: {
     posts: {
       type: Array,

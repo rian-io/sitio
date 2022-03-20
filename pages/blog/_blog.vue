@@ -31,15 +31,9 @@
 </template>
 
 <script>
-import PostDate from '~/components/posts/PostDate'
-import TagButton from '~/components/tags/TagButton'
 import ymlTags from '~/meta/tags.yml'
 
 export default {
-  components: {
-    PostDate,
-    TagButton
-  },
   async asyncData ({ $content, params, error }) {
     let post
     let tags = []

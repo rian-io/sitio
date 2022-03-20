@@ -5,13 +5,9 @@
 </template>
 
 <script>
-import PostList from '~/components/posts/PostList'
 import getContent from '~/utils/getContent'
 
 export default {
-  components: {
-    PostList
-  },
   async asyncData ({ $content, params, error }) {
     const content = await getContent($content, params, error)
     return {

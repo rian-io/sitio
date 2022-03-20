@@ -4,7 +4,7 @@
       <Navigation />
     </nav>
     <main>
-      <ColorMode />
+      <ColorModePicker />
       <Nuxt />
     </main>
   </div>

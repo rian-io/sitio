@@ -6,13 +6,9 @@
 </template>
 
 <script>
-import TagPostList from '~/components/tags/TagPostList'
 import { getTag } from '~/utils/tag'
 
 export default {
-  components: {
-    TagPostList
-  },
   async asyncData ({ $content, params }) {
     const tag = getTag(params.tag)
 

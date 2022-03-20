@@ -14,13 +14,8 @@
 </template>
 
 <script>
-import PostItem from '~/components/posts/PostItem'
-
 export default {
   name: 'TagPostList',
-  components: {
-    PostItem
-  },
   props: {
     posts: {
       type: Array,

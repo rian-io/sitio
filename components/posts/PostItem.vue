@@ -6,13 +6,8 @@
 </template>
 
 <script>
-import PostDate from '~/components/posts/PostDate'
-
 export default {
   name: 'PostItem',
-  components: {
-    PostDate
-  },
   props: {
     post: {
       type: Object,
